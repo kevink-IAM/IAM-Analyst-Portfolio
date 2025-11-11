@@ -71,6 +71,3 @@ This project focuses on leveraging Microsoft Graph API scripting to automate a c
 ## Impact Summary
 
 These projects demonstrate my proven ability to **implement secure IAM workflows**, automate compliance tasks, and **enforce governance** across Microsoft and Okta platforms. They reflect the core responsibilities of a modern IAM Analyst operating in real-world enterprise environments.
-
-
-Remember to use the **Preview tab** on GitHub to confirm the perfect formatting before you commit the changes. Once you hit commit, your portfolio is done!
