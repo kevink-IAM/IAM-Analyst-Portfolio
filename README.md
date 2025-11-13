@@ -1,73 +1,91 @@
-# IAM Analyst Technical Portfolio: Proven Results
+# IAM Analyst Technical Portfolio
 
 ## Overview
-
-This portfolio documents three high-impact projects that demonstrate core technical proficiencies required of a modern Identity and Access Management (IAM) Analyst. The focus is on implementing secure, governed, and automated access solutions across major identity platforms.
-
-### Key Technologies Used
-
-* **Identity Providers (IdP):** Microsoft Entra ID (Azure AD), Okta
-* **Protocols:** SAML 2.0, Microsoft Graph API
-* **Automation:** PowerShell Scripting
-* **Governance:** Principle of Least Privilege (PoLP), Audit Logging
+This portfolio highlights three focused Identity & Access Management (IAM) projects that demonstrate real-world skills across Microsoft Entra ID (Azure AD), Okta, and PowerShell automation.  
+The work emphasizes secure authentication, governance cleanup, least-privilege enforcement, and identity lifecycle automation—core functions of a modern IAM Analyst.
 
 ---
 
-## Project 1: Entra ID Governance
-
-This project simulates an enterprise governance cleanup in Microsoft Entra ID, focusing on removing risky direct administrative roles and enforcing a standardized, PIM-ready access model.
-
-**Goal:** Clean up security vulnerabilities by removing direct administrative role assignments and implementing a standardized, group-based access model in Entra ID.
-
-| Key Outcome | Analyst Skill Demonstrated |
-| :--- | :--- |
-| **Role Remediation** | Successfully moved access control from individual users (violating PoLP) to a managed security group, preparing the environment for **PIM** (Privileged Identity Management). |
-| **Standardization** | Applied a clear, auditable naming convention and included ownership details in the group description for immediate compliance checks. |
-| **Compliance Proof** | Used Entra ID Audit Logs to confirm the successful de-provisioning (removal) of the original direct role assignments, completing the governance cleanup. |
-
-### Artifacts (Stored in the `Entra ID Governance` folder)
-
-* **Group Standardization Screenshot:** Proof of compliant group naming and description.
-* **De-provisioning Audit Log:** Audit trail confirming the role removal action.
+## Key Technologies
+- **Identity Providers:** Microsoft Entra ID (Azure AD), Okta  
+- **Protocols:** SAML 2.0, OIDC, Microsoft Graph API  
+- **Automation:** PowerShell, Graph API scripting  
+- **Governance:** Least Privilege (PoLP), RBAC, Audit Logging  
 
 ---
 
-## Project 2: Okta SSO
+# 📁 Project 1: Entra ID Governance & Access Cleanup
 
-This project demonstrates cross-platform identity federation by configuring Okta as the Identity Provider (IdP) to seamlessly authenticate users into a third-party application using SAML 2.0.
+This project simulates an enterprise identity governance cleanup by removing risky direct administrative role assignments and replacing them with a standardized RBAC structure.
 
-**Goal:** Configure and validate a successful Single Sign-On (SSO) integration using **SAML 2.0**, connecting Okta as the Identity Provider (IdP) to a test Service Provider (SP).
+### 🎯 Goal
+Eliminate high-risk direct role assignments and enforce a consistent, PIM-ready group-based access model.
 
-| Key Outcome | Analyst Skill Demonstrated |
-| :--- | :--- |
-| **Federation Setup** | Configured the trust relationship by exchanging metadata, ensuring the IdP and SP could securely communicate. |
-| **Attribute Mapping** | Precisely mapped required user claims and attributes within Okta to ensure the receiving application got the correct identity data. |
-| **Validation** | Executed and captured the successful SAML assertion, confirming end-to-end user authentication was seamless. |
+### Key Outcomes
+| Outcome | Skill Demonstrated |
+|--------|--------------------|
+| **Role Remediation** | Migrated direct admin access to RBAC security groups aligned with least privilege. |
+| **Standardization** | Applied naming conventions and ownership metadata for audit readiness. |
+| **Governance Validation** | Verified cleanup using Entra ID Audit Logs documenting successful role removals. |
 
-### Artifacts (Stored in the `Okta SSO` folder)
-
-* **SAML Assertion Success Screenshot:** Visual proof of the successful cross-platform authentication flow.
-
----
-
-## Project 3: PowerShell Automation
-
-This project focuses on leveraging Microsoft Graph API scripting to automate a common, high-volume security task, drastically improving operational efficiency and reporting capabilities.
-
-**Goal:** Develop and execute a production-grade PowerShell script to automate a common security compliance task: auditing Multi-Factor Authentication (MFA) status for all users in Entra ID.
-
-| Key Outcome | Analyst Skill Demonstrated |
-| :--- | :--- |
-| **API Scripting** | Wrote a robust script that connects securely to the **Microsoft Graph API** using the minimum necessary scopes. |
-| **Operational Efficiency** | Automated a task (MFA Audit) that would typically take hours via the GUI, transforming it into a single, executable script. |
-| **Data Delivery** | Used PowerShell objects and export commands to deliver a clean, structured CSV report, ready for security team review. |
-
-### Artifacts (Stored in the `PowerShell Automation` folder)
-
-* **`Check-MFAStatus.ps1`:** The fully commented, executable script code.
+### Artifacts
+Located in the `Entra ID Governance` folder:
+- Group naming standard screenshot  
+- Audit log evidence of deprovisioned roles  
 
 ---
 
-## Impact Summary
+# 📁 Project 2: Okta SSO Integration (SAML 2.0)
 
-These projects demonstrate my proven ability to **implement secure IAM workflows**, automate compliance tasks, and **enforce governance** across Microsoft and Okta platforms. They reflect the core responsibilities of a modern IAM Analyst operating in real-world enterprise environments.
+This project demonstrates configuring Okta as the Identity Provider (IdP) to authenticate users into a test Service Provider using SAML 2.0.
+
+### 🎯 Goal
+Implement and validate a working SAML-based Single Sign-On (SSO) integration from Okta IdP to a third-party Service Provider.
+
+### Key Outcomes
+| Outcome | Skill Demonstrated |
+|--------|--------------------|
+| **Federation Setup** | Established the IdP/SP trust relationship via metadata exchange. |
+| **Attribute Mapping** | Configured SAML attributes (NameID, email, groups) for identity accuracy. |
+| **End-to-End Validation** | Captured a successful SAML assertion confirming proper authentication flow. |
+
+### Artifacts
+Located in the `Okta SSO` folder:
+- Successful SAML assertion screenshot  
+
+---
+
+# 📁 Project 3: PowerShell MFA Audit Automation
+
+This project automates MFA compliance auditing using PowerShell and the Microsoft Graph API.
+
+### 🎯 Goal
+Automate MFA status auditing across all Entra ID users to streamline compliance and reduce manual workload.
+
+### Key Outcomes
+| Outcome | Skill Demonstrated |
+|--------|--------------------|
+| **API Scripting** | Developed a least-privilege Graph API PowerShell script. |
+| **Operational Efficiency** | Reduced MFA audit time from hours to minutes. |
+| **Reporting Delivery** | Exported a clean, structured CSV report for compliance review. |
+
+### Artifacts
+Located in the `PowerShell Automation` folder:
+- `Check-MFAStatus.ps1` (fully commented script)
+
+---
+
+# Summary & Impact
+Across these projects, I demonstrated the ability to:
+- Configure secure authentication flows (SSO, SAML)  
+- Enforce identity governance and least privilege  
+- Use audit logs for compliance validation  
+- Automate identity tasks using PowerShell + Graph API  
+- Work confidently across Entra ID and Okta environments  
+
+These hands-on projects reflect the core responsibilities of an IAM Analyst in a cloud-forward organization.
+
+---
+
+
+
